@@ -1,0 +1,16 @@
+.slider_all_of_it {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	.slider_main_header {
+		margin-left: 5px;
+		font-weight: bold;
+		font-size: 28px;
+		margin-top: 13px;
+	}
+	.slider_main_icon {
+		width: 35px;
+		height: 35px;
+	}
+}
