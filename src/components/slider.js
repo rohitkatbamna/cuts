@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "../scss/slider.scss";
 import mainImage from "../assets/head.png";
 
 function Circle({ num, lines = true, linecolored = "half", backc = true }) {
 	const white = {
 		backgroundColor: "white",
-		border: "2px solid #edf1f6",
+		border: "1px solid #edf1f6",
 		color: "#525e77",
 	};
 	const blue = {
@@ -13,34 +13,36 @@ function Circle({ num, lines = true, linecolored = "half", backc = true }) {
 		color: "white",
 	};
 	return (
-		<div className="addgrid_here">
-			<div className="circle_all_of_it" style={backc ? blue : white}>
-				<div className="circle_num">
-					<p>{num}</p>
+		<div>
+			<div className="addgrid_here">
+				<div className="circle_all_of_it" style={backc ? blue : white}>
+					<div className="circle_num">
+						<p>{num}</p>
+					</div>
 				</div>
+				{lines === true ? (
+					<>
+						<Changecolor linecolored={linecolored} />
+					</>
+				) : (
+					<></>
+				)}
 			</div>
-			{lines === true ? (
-				<>
-					<Changecolor linecolored={linecolored} />
-				</>
-			) : (
-				<></>
-			)}
 		</div>
 	);
 }
-function Slider() {
-	const [circle1, setCircle1] = useState([true, "half"]);
-	const [circle2, setCircle2] = useState([false, "blacked"]);
-	const [circle3, setCircle3] = useState([false, "blacked"]);
-	const [circle4, setCircle4] = useState([false, "blacked"]);
+function Slider({ circlechange }) {
+	const circle1 = circlechange[0];
+	const circle2 = circlechange[1];
+	const circle3 = circlechange[2];
+	const circle4 = circlechange[3];
 	return (
 		<>
 			<div className="slider_all_of_it">
 				<img src={mainImage} alt="Main Icon" className="slider_main_icon" />
 				<p className="slider_main_header">Eden</p>
 			</div>
-			<div className="d-flex justify-content-center">
+			<div className="d-flex justify-content-center add_margin_here">
 				<Circle num={1} linecolored={circle1[1]} backc={circle1[0]} />
 				<Circle num={2} linecolored={circle2[1]} backc={circle2[0]} />
 				<Circle num={3} linecolored={circle3[1]} backc={circle3[0]} />
