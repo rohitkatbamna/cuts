@@ -33,10 +33,13 @@ function Setup({ circlechange }) {
 						aria-label="form input large"
 					/>
 					<label for="basic-url" class="form-label mt-3">
-						Workspace URL
+						Workspace URL <span style={{ color: "#c4ccdd" }}>(optional)</span>
 					</label>
 					<div class="input-group mb-3">
-						<span class="input-group-text" id="basic-addon3">
+						<span
+							class="input-group-text"
+							id="basic-addon3"
+							style={{ color: "#8f9bb4" }}>
 							www.eden.com/
 						</span>
 						<input
