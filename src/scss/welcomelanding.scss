@@ -24,4 +24,26 @@
 			font-size: 15px;
 		}
 	}
+	@media screen and (max-width: 530px) {
+		.welcome_header {
+			margin-left: 0;
+		}
+
+		.welcome_input_all_of_it {
+			margin-left: 0;
+		}
+	}
+	@media screen and (max-width: 452px) {
+		.welcome_input_all_of_it {
+			.welcome_input {
+				width: auto;
+				margin-left: 2vw;
+				margin-right: 2vw;
+			}
+			.welcome_input button {
+				font-size: 15px;
+				width: auto;
+			}
+		}
+	}
 }

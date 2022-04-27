@@ -35,4 +35,18 @@
 			}
 		}
 	}
+	@media only screen and (max-width: 530px) {
+		.below_slider_content {
+			margin-left: 2vw;
+			margin-right: 2vw;
+			.congrats_all_of_it {
+				.congrats_input {
+					width: auto;
+				}
+				.congrats_input button {
+					width: auto;
+				}
+			}
+		}
+	}
 }
