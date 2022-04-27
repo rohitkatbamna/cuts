@@ -16,8 +16,30 @@
 		.eden_input {
 			width: 400px;
 			margin: 0 auto 0 auto;
+			.enden_two_cards {
+				display: flex;
+				justify-content: space-between;
+				.btn {
+					width: 180px;
+					text-align: left;
+					border: 1px solid #f3f5f9;
+					img {
+						&:hover {
+							color: #664de5;
+						}
+					}
+					.first_p {
+						font-weight: 700;
+						margin-top: 10px;
+					}
+					.second_p {
+						font-size: 17px;
+						color: #9ba3b3;
+					}
+				}
+			}
 		}
-		.eden_input button {
+		.eden_input .workspace_button {
 			background-color: #664de5;
 			color: white;
 			width: 400px;

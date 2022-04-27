@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import WelcomeLanding from "./pages/welcomelanding";
 import Setup from "./pages/setup";
 import Eden from "./pages/eden";
+import Congrats from "./pages/congrats";
 
 function App() {
 	const [circle1, setCircle1] = useState([true, "half"]);
@@ -35,6 +36,10 @@ function App() {
 						element={<Setup circlechange={circlechange} />}
 					/>
 					<Route path="/eden" element={<Eden circlechange={circlechange} />} />
+					<Route
+						path="/congrats"
+						element={<Congrats circlechange={circlechange} />}
+					/>
 				</Routes>
 			</Router>
 		</div>
