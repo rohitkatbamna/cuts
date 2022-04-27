@@ -12,25 +12,25 @@ function Congrats({ circlechange }) {
 	return (
 		<div className="congrats">
 			<Slider circlechange={circlechange} />
-			<div className="congrats_header">
-				<p className="first_line">Congratulations, Eren ! </p>
-				<p className="second_line">
-					You have completed onboarding, you can start using eden.
-				</p>
-			</div>
-			<div
-				className="text-center congrats_check_div"
-				style={{ marginLeft: "-64px" }}>
-				<img src={checkmark} alt="check mark" className="congrats_check_mark" />
-			</div>
-			<div className="congrats_all_of_it">
-				<div className="congrats_input">
-					<button
-						type="button"
-						className="btn btn-lg mt-4"
-						onClick={handleClick}>
-						Launch Eden
-					</button>
+			<div className="below_slider_content">
+				<div className="congrats_check_div text-center">
+					<img src={checkmark} alt="check mark" height={20} width={20} />
+				</div>
+				<div className="congrats_header">
+					<p className="first_line">Congratulations, Eren ! </p>
+					<p className="second_line">
+						You have completed onboarding, you can start using eden.
+					</p>
+				</div>
+				<div className="congrats_all_of_it">
+					<div className="congrats_input">
+						<button
+							type="button"
+							className="btn btn-lg mt-4"
+							onClick={handleClick}>
+							Launch Eden
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
