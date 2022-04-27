@@ -14,3 +14,30 @@
 		height: 35px;
 	}
 }
+.circle_all_of_it {
+	height: 43px;
+	width: 43px;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	.circle_num {
+		text-align: center;
+		padding: 10px;
+	}
+}
+
+.addgrid_here {
+	display: grid;
+	grid-template-columns: 45px 30px 30px;
+	place-content: center center;
+	align-items: center;
+	.circle_line_blacked {
+		border-bottom: 2px solid #edf1f6;
+	}
+	.circle_line_colored {
+		border-bottom: 2px solid #664de5;
+	}
+}
